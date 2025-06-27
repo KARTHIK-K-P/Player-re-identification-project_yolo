@@ -1,0 +1,29 @@
+# Video Configuration
+video:
+  camera1_path: "data/videos/broadcast.mp4"
+  camera2_path: "data/videos/tacticam.mp4"
+  output_path: "output/videos/"
+
+# Detection Configuration
+detection:
+  model_path: "data/models/yolov5s.pt"
+  confidence_threshold: 0.5
+  iou_threshold: 0.45
+  class_filter: [0]  # person class in COCO
+
+# Re-identification Configuration
+reid:
+  feature_dim: 512
+  similarity_threshold: 0.7
+  max_distance: 2.0
+
+# Tracking Configuration
+tracking:
+  max_disappeared: 30
+  max_distance: 100
+
+# Visualization Configuration
+visualization:
+  fps: 30
+  font_scale: 0.8
+  thickness: 2
